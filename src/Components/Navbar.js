@@ -27,7 +27,10 @@ const Navbar = () => {
         setAnchorElUser(null);
     };
     return (
-        <AppBar position="static" sx={{ backgroundColor: '#19191B', boxShadow: 'none', px: 0 }}>
+        <AppBar position="static" sx={{
+            backgroundColor: '#19191B',
+            boxShadow: 'none',
+        }}>
             <Container>
                 <Toolbar disableGutters>
                     <Typography
@@ -79,16 +82,34 @@ const Navbar = () => {
                         variant="span"
                         noWrap
                         component="div"
-                        sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, fontWeight: 'bold', fontSize: '18.5833px' }}
+                        sx={{
+                            flexGrow: 1,
+                            display: { xs: 'flex', md: 'none' },
+                            fontWeight: 'bold',
+                            fontSize: '18.5833px'
+                        }}
                     >
                         Agency
                     </Typography>
-                    <Box sx={{ flexGrow: 1, gap: 5, display: { xs: 'none', md: 'flex' }, marginLeft: '200px' }}>
+                    <Box sx={{
+                        flexGrow: 1,
+                        gap: 5,
+                        display: { xs: 'none', md: 'flex' },
+                        marginLeft: '200px'
+                    }}
+                    >
                         {pages.map((page) => (
                             <Button
                                 key={page}
                                 onClick={handleCloseNavMenu}
-                                sx={{ my: 2, color: 'white', display: 'block', '&:first-child': { color: '#5454D4' } }}
+                                sx={{
+                                    my: 2,
+                                    color: 'white',
+                                    display: 'block',
+                                    '&:first-child': {
+                                        color: '#5454D4'
+                                    }
+                                }}
                             >
                                 {page}
                             </Button>
@@ -116,7 +137,11 @@ const Navbar = () => {
                     </Box>
                     <Box>
                         <Button variant="outlined" sx={{
-                            border: "0.66369px solid #FFFFFF", color: '#FFFFFF', backdropFilter: 'blur(1.32738px)', borderRadius: '3.31845px', '&:hover': {
+                            border: "0.66369px solid #FFFFFF",
+                            color: '#FFFFFF',
+                            backdropFilter: 'blur(1.32738px)',
+                            borderRadius: '3.31845px',
+                            '&:hover': {
                                 backgroundColor: '#5454D4'
                             }
                         }}>Contact Us</Button>
