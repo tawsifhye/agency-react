@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import WhyEnver from './Components/WhyEnver';
 import Services from './Components/Services';
+import Portfolio from './Components/Portfolio';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Hero />
       <WhyEnver />
       <Services />
+      <Portfolio />
     </div>
   );
 }

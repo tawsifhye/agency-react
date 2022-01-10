@@ -9,7 +9,6 @@ import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
 const Services = () => {
 
     const serviceStyle = {
-        position: 'relative',
         title: {
             width: '200px',
             height: '25px',
@@ -55,7 +54,7 @@ const Services = () => {
             >
                 The Service We Provide For You
             </Typography>
-            <Grid container spacing={2} sx={{
+            <Grid container sx={{
                 marginTop: '64px',
                 textAlign: 'center',
                 rowGap: 10,
