@@ -37,7 +37,12 @@ const Navbar = () => {
                         variant="span"
                         noWrap
                         component="div"
-                        sx={{ mr: 2, display: { xs: 'none', md: 'flex', }, fontWeight: 'bold', fontSize: '18.5833px' }}
+                        sx={{
+                            mr: 2,
+                            display: {
+                                xs: 'none', md: 'flex',
+                            }, fontWeight: 'bold', fontSize: '18.5833px'
+                        }}
                     >
                         Agency
                     </Typography>
