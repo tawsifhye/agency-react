@@ -5,6 +5,45 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import banner_img from '../images/hero-image.png';
 const Hero = () => {
 
+    const Styles = {
+        image: {
+            clipPath: 'polygon(45% 0%, 84% 10%, 54% 0%, 120% 27%, 89% 79%, 76% 101%, 24% 84%, 0% 84%, 0% 0%, 0% 0%)',
+            zIndex: 100
+        },
+        imageBox: {
+            width: '100%',
+            padding: '20px',
+            position: 'relative',
+            '&::before': {
+                content: '""',
+                width: '249.11px',
+                height: '249.11px',
+                left: '40px',
+                top: '101px',
+                position: 'absolute',
+                border: '1.32738px solid #FFFFFF',
+                borderRadius: '14.72px',
+                transform: 'rotate(23.64deg)',
+                zIndex: - 10
+            },
+            '&::after': {
+                content: '""',
+                width: '249.11px',
+                height: '249.11px',
+                left: '76px',
+                top: '156px',
+                position: 'absolute',
+                border: '1.32738px solid #FFFFFF',
+                borderRadius: '14.72px',
+                transform: 'rotate(23.64deg)',
+                backgroundColor: '#5454D4',
+                zIndex: -1,
+            }
+
+        }
+
+    }
+    console.log();
     return (
 
         <Container maxWidth='lg' sx={{ marginTop: '103px' }}>
@@ -46,13 +85,16 @@ const Hero = () => {
                     </Button>
                 </Grid>
                 <Grid item lg={5} md={6} sm={12} xs={12} >
-                    <Box style={{ width: '100%' }}>
-                        <img src={banner_img} alt="" />
+                    <Box sx={Styles.imageBox}
+                    >
+                        <img
+                            style={Styles.image}
+                            src={banner_img} alt="" />
                     </Box>
                 </Grid>
             </Grid>
 
-        </Container>
+        </Container >
     );
 };
 
