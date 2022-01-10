@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import WhyEnver from './Components/WhyEnver';
+import Services from './Components/Services';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Hero />
       <WhyEnver />
+      <Services />
     </div>
   );
 }
