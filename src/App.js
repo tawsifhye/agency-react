@@ -6,6 +6,7 @@ import WhyEnver from './Components/WhyEnver';
 import Services from './Components/Services';
 import Portfolio from './Components/Portfolio';
 import ContactUs from './Components/ContactUs';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Services />
       <Portfolio />
       <ContactUs />
+      <Footer />
     </div>
   );
 }
