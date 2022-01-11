@@ -12,7 +12,6 @@ const Hero = () => {
         },
         imageBox: {
             width: '100%',
-            padding: '20px',
             position: 'relative',
             '&::before': {
                 content: '""',
@@ -30,8 +29,8 @@ const Hero = () => {
                 content: '""',
                 width: '249.11px',
                 height: '249.11px',
-                left: '76px',
-                top: '156px',
+                left: '56px',
+                top: '136px',
                 position: 'absolute',
                 border: '1.32738px solid #FFFFFF',
                 borderRadius: '14.72px',
@@ -46,8 +45,8 @@ const Hero = () => {
             background: '#E7E7E7',
             height: '26px',
             position: 'absolute',
-            left: '372px',
-            top: '390px',
+            left: '343px',
+            top: '410px',
             width: '5px',
             '&::after': {
                 background: '#E7E7E7',
@@ -64,7 +63,7 @@ const Hero = () => {
             position: 'absolute',
             width: '36.55px',
             height: '36.55px',
-            left: '349px',
+            left: '343px',
             top: '3.12px',
             border: '1.99107px solid #FFFFFF',
             borderRadius: '50%',
