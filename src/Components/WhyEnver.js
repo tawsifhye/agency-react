@@ -1,5 +1,5 @@
 import { Container, Grid, Typography } from '@mui/material';
-import { Box, fontSize } from '@mui/system';
+import { Box } from '@mui/system';
 import React from 'react';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import meeting_image from '../images/image4.png'
