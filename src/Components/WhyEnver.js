@@ -1,11 +1,13 @@
 import { Container, Grid, Typography } from '@mui/material';
+import { Box, fontSize } from '@mui/system';
 import React from 'react';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import meeting_image from '../images/image4.png'
 
 const WhyEnver = () => {
     return (
 
-        <Container maxWidth='lg' sx={{ marginTop: '103px' }}>
+        <Container maxWidth='lg' sx={{ marginTop: '103px', position: 'relative' }}>
             <Grid container spacing={2}
             >
                 <Grid item lg={6} md={6} sm={12} xs={12}
@@ -42,7 +44,29 @@ const WhyEnver = () => {
                 </Grid>
 
             </Grid>
-            <img src={meeting_image} style={{ width: '100%', marginTop: '33px' }} />
+            <Box sx={{ position: 'relative', marginTop: '33px' }}>
+                <img style={{ width: '100%' }} src={meeting_image} alt="" />
+                <PlayArrowIcon sx={{
+                    position: 'absolute',
+                    color: 'white',
+                    fontSize: '50px',
+                    backgroundColor: '#5454D4',
+                    borderRadius: '50%',
+                    padding: '5px',
+                    top: {
+                        lg: '50%',
+                        sm: '39%',
+                        xs: '36%'
+                    },
+                    left: {
+                        lg: '50%',
+                        sm: '49%',
+                        xs: '41%'
+                    },
+                }} />
+
+            </Box>
+
         </Container>
     );
 };
