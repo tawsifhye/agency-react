@@ -67,6 +67,10 @@ const styles = {
         height: 0,
         width: '13px',
         padding: '4px',
+        marginTop: {
+            md: 0,
+            xs: '20px'
+        },
         position: 'absolute',
         left: '50%',
         borderRadius: '10px',
