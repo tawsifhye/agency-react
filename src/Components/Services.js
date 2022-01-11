@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Typography } from '@mui/material';
+import { Box, Container, Grid, Typography } from '@mui/material';
 import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
 import LayersIcon from '@mui/icons-material/Layers';
 import ViewAgendaIcon from '@mui/icons-material/ViewAgenda';
@@ -35,11 +35,134 @@ const Services = () => {
             height: '45.79px',
             borderRadius: '50%',
             padding: '13.72px 14.38px',
-        }
+        },
+        triangleIcon1: {
+            position: 'absolute',
+            width: ' 47.45px',
+            height: ' 48.45px',
+            left: {
+                md: '178.44px',
+                sm: '41px',
+                xs: '38px',
+            },
+            top: {
+                md: '-43px',
+                sm: '-37',
+                xs: '23px',
+            },
+            borderBottom: '2.65476px solid #E7E7E7',
+            transform: 'rotate(387deg)',
+            '&:: before': {
+                content: '""',
+                position: 'absolute',
+                width: '51.45px',
+                height: '50.45px',
+                left: '-14px',
+                top: '32px',
+                borderBottom: '2.65476px solid #E7E7E7',
+                transform: 'rotate(300deg)',
+            },
+            '&:: after': {
+                content: '""',
+                position: 'absolute',
+                width: ' 49.45px',
+                height: ' 48.45px',
+                left: '8px',
+                top: '35px',
+                borderBottom: '2.65476px solid #E7E7E7',
+                transform: 'rotate(424deg)'
+
+            }
+        },
+
+        triangleIcon2: {
+            position: 'absolute',
+            width: '47.45px',
+            height: '48.45px',
+            left: {
+                md: '178.44px',
+                sm: '47px',
+                xs: '38px',
+            },
+            top: {
+                md: '-30px',
+                sm: '37px',
+                xs: '10px',
+            },
+            borderBottom: '1.65476px solid #E7E7E7',
+            transform: 'rotate(387deg)',
+            '&:: before': {
+                content: '""',
+                position: 'absolute',
+                width: '48.45px',
+                height: '48.45px',
+                left: '-11px',
+                top: '33px',
+                borderBottom: '1.65476px solid #E7E7E7',
+                transform: 'rotate(300deg)',
+            },
+            '&::after': {
+                content: '""',
+                position: 'absolute',
+                width: '49.45px',
+                height: '48.45px',
+                left: '8px',
+                top: '35px',
+                borderBottom: '1.65476px solid #E7E7E7',
+                transform: 'rotate(424deg)'
+
+            }
+        },
+        crossIcon1: {
+            background: '#E7E7E7',
+            content: '""',
+            height: '26px',
+            position: 'absolute',
+            right: '95px',
+            top: '80px',
+            width: '5px',
+            transform: 'rotate(63deg)',
+            '&::after': {
+                background: '#E7E7E7',
+                content: '""',
+                height: '5px',
+                position: 'absolute',
+                left: '-10px',
+                top: '11px',
+                width: '26px',
+            }
+        },
+        crossIcon2: {
+            background: '#E7E7E7',
+            content: '""',
+            height: '26px',
+            position: 'absolute',
+            left: {
+                md: '64.44px',
+                sm: '41px',
+                xs: '38px',
+            },
+            bottom: '-25px',
+            width: '5px',
+            transform: 'rotate(63deg)',
+            '&::after': {
+                background: '#E7E7E7',
+                content: '""',
+                height: '5px',
+                position: 'absolute',
+                left: '-10px',
+                top: '11px',
+                width: '26px',
+            }
+        },
     }
 
     return (
-        <Container maxWidth='lg' sx={{ marginTop: '99px', textAlign: 'center' }}>
+        <Container maxWidth='lg' sx={{ marginTop: '99px', textAlign: 'center', position: 'relative' }}>
+            <Box sx={serviceStyle.triangleIcon1} />
+            <Box sx={serviceStyle.triangleIcon2} />
+            <Box sx={serviceStyle.crossIcon1} />
+            <Box sx={serviceStyle.crossIcon2} />
             <Typography
                 sx={{
                     width: '461.26px',
