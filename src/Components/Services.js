@@ -165,8 +165,7 @@ const Services = () => {
             <Box sx={serviceStyle.crossIcon2} />
             <Typography
                 sx={{
-                    width: '461.26px',
-                    height: '93px',
+
                     fontWeight: 'bold',
                     fontSize: '39.8214px',
                     lineHeight: '46px',
@@ -175,7 +174,7 @@ const Services = () => {
                     margin: '0 auto',
                 }}
             >
-                The Service We Provide For You
+                The Service We Provide <br /> For You
             </Typography>
             <Grid container sx={{
                 marginTop: '64px',

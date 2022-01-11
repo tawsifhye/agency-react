@@ -6,7 +6,7 @@ const LinearBackground = () => {
     //     setVisible(false)
     // }
 
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
     return (
         <>
 
